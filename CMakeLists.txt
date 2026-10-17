@@ -54,7 +54,8 @@ foreach(SOURCE_FILE ${ALL_SOURCES})
     if(IS_BROKEN)
         add_executable(${EXEC_NAME} EXCLUDE_FROM_ALL ${SOURCE_FILE})
     else()
-        add_executable(${EXEC_NAME} ${SOURCE_FILE})
+        add_executable(${EXEC_NAME} ${SOURCE_FILE}
+        )
     endif()
 
     set_target_properties(${EXEC_NAME} PROPERTIES
